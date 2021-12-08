@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+td, th {border: 1px solid black;}
+</style>
+<title>Formulario de registro - Mi web</title>
+</head>
+<body>
+
+<form action="../ejercicio3/pagina2.html" method="get">
+
+   <h1>Formulario de registro</h1>
+
+    <div>
+        <p>
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" required maxlength="50"> 
+        </p>
+    </div>
+
+    <div>
+        <p>
+            <label for="apellidos">Apellidos </label>
+            <input type="text" id="apellidos" required maxlength="50">   
+        </p>
+    </div>
+
+    <div>
+            Sexo:
+            <label> <input type="radio" name="sexo" value="H" /> Hombre</label>
+            <label> <input type="radio" name="sexo" value="M" /> Mujer</label>
+    </div>
+
+    <div>
+            <p>
+                <label for="correo">Correo:</label>
+                 <input id="correo" type="text" name="email">
+            </p>
+    </div>
+
+    <div>  
+        Rol:  
+            <select name="roles">
+                <option value="">&nbsp;</option>
+                <option>Estudiante </option>
+                <option>Profesor </option>
+                <option>Ayudante </option>
+                <option>Administrador </option> 
+            </select>
+    </div>
+
+    <div>        
+        <p> 
+            <input type="checkbox" id="cbox1" value="checkbox1"> Deseo recibir información sobre novedades y ofertas.
+        </p>
+    </div>
+
+    <div>
+        <p>
+            <label>
+                <input type="checkbox" id="cbox2" value="checkbox2" checked> Declaro haber leído y aceptar las condiciones
+                generales del programa y la normativa sobre protección de datos.
+            </label>
+         </p>
+    </div>    
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </p>
+</form>
+</body>
+</html>
